@@ -1,14 +1,10 @@
-import { cn } from "@workspace/ui/lib/utils"
-import { attributeRootLayoutRequest } from "@workspace/otel/layout"
-import {
-  BottomCorners,
-  LegalLinks,
-  TopCorners,
-} from "@workspace/ui/components/corners"
-import "@workspace/ui/globals.css"
-import { NextPageDecode } from "@workspace/ui/components/page-decode-next"
-import { ThemeProvider } from "@workspace/ui/components/theme-provider"
-import { fontVariables } from "@workspace/ui/lib/fonts"
+import { cn } from "@/lib/utils"
+import { attributeRootLayoutRequest } from "@/lib/otel/layout"
+import { BottomCorners, LegalLinks, TopCorners } from "@/components/corners"
+import "@/styles/globals.css"
+import { NextPageDecode } from "@/components/page-decode-next"
+import { ThemeProvider } from "@/components/theme-provider"
+import { fontVariables } from "@/lib/fonts"
 
 export const metadata = {
   title: "1909",
@@ -40,15 +36,7 @@ export default async function RootLayout({
           <BottomCorners
             fade
             copyrightTip="zyx"
-            links={
-              <LegalLinks
-                labels={{ privacy: "隱私權", terms: "條款" }}
-                tips={{
-                  privacy: "zyx.tw 各站儲存與記錄的資料",
-                  terms: "zyx.tw 各站的使用規則",
-                }}
-              />
-            }
+            links={<LegalLinks labels={{ privacy: "隱私權", terms: "條款" }} />}
           />
         </ThemeProvider>
       </body>
