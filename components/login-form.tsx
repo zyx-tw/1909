@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 
-import { Button } from "@workspace/ui/components/ui/button"
-import { Spinner } from "@workspace/ui/components/ui/spinner"
+import { Button } from "@/components/ui/button"
+import { Spinner } from "@/components/ui/spinner"
 
 import { authClient } from "@/lib/auth-client"
 

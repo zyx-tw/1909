@@ -1,5 +1,5 @@
-import { Corner } from "@workspace/ui/components/corners"
-import { Separator } from "@workspace/ui/components/ui/separator"
+import { Corner } from "@/components/corners"
+import { Separator } from "@/components/ui/separator"
 
 import { calculateDebts } from "@/lib/calc"
 import { db } from "@/lib/db"

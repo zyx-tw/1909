@@ -1,15 +1,15 @@
 "use client"
 
-import { cornerLink } from "@workspace/ui/components/corners"
-import { Button } from "@workspace/ui/components/ui/button"
-import { Input } from "@workspace/ui/components/ui/input"
+import { cornerLink } from "@/components/corners"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@workspace/ui/components/ui/dialog"
+} from "@/components/ui/dialog"
 
 import { useExpenseForm } from "@/hooks/use-expense-form"
 

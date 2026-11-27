@@ -1,6 +1,6 @@
 "use client"
 
-import { Badge } from "@workspace/ui/components/ui/badge"
+import { Badge } from "@/components/ui/badge"
 
 import { useExpenseDetail } from "@/hooks/use-expense-detail"
 import { ExpenseDetail } from "@/components/expense-detail"

@@ -1,4 +1,4 @@
-import { cornerLink } from "@workspace/ui/components/corners"
+import { cornerLink } from "@/components/corners"
 
 import { signOut } from "@/app/actions"
 
