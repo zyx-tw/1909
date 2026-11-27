@@ -16,4 +16,4 @@ jobs:
       images: '["ghcr.io/zyx-tw/1909"]'
       target: land
       tenant: compose
-      app: 1909
+      app: app-1909
