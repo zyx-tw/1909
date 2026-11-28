@@ -3,7 +3,6 @@ import { attributeRootLayoutRequest } from "@/lib/otel/layout"
 import { BottomCorners, LegalLinks, TopCorners } from "@/components/corners"
 import "@/styles/globals.css"
 import { NextPageDecode } from "@/components/page-decode-next"
-import { ThemeProvider } from "@/components/theme-provider"
 import { fontVariables } from "@/lib/fonts"
 
 export const metadata = {
@@ -25,20 +24,17 @@ export default async function RootLayout({
   return (
     <html
       lang="zh-TW"
-      suppressHydrationWarning
-      className={cn("dark", "antialiased", fontVariables, "font-sans")}
+      className={cn("antialiased", fontVariables, "font-sans")}
     >
       <body>
-        <ThemeProvider>
-          <NextPageDecode />
-          <TopCorners fade />
-          {children}
-          <BottomCorners
-            fade
-            copyrightTip="zyx"
-            links={<LegalLinks labels={{ privacy: "隱私權", terms: "條款" }} />}
-          />
-        </ThemeProvider>
+        <NextPageDecode />
+        <TopCorners fade />
+        {children}
+        <BottomCorners
+          fade
+          copyrightTip="zyx"
+          links={<LegalLinks labels={{ privacy: "隱私權", terms: "條款" }} />}
+        />
       </body>
     </html>
   )
